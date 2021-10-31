@@ -3,11 +3,11 @@
 let currentDay = moment().format("dddd, MMMM Do YYYY");
 document.getElementById('currentDay').innerHTML= currentDay;
 
+
+
 //check for current time
 
-
 let rows = document.getElementsByClassName("row-2");
-
 
     
     function getCurrentHour() {
@@ -30,25 +30,41 @@ let rows = document.getElementsByClassName("row-2");
                 $(this).addClass("future");
             }
     
-        });
+        })
+
+      
         console.log(currentHour);
         console.log(rowHour);
-        console.log(rowHour[1]);
+
     };
         getCurrentHour();
 
 
-    
-var saveButton = document.getElementsByClassName('saveBtn');
-saveButton.onclick = saveData;
+   function saveData() {
+    $(".saveBtn").on("click", function () {
+
+        $(".saveBtn").each(function(){
+
+        })
+            saveButton = parseInt($(this).attr("id")); 
         
+        var text = $(this).siblings("textarea").val();
+        var time = $(this).parent().attr("id");
 
-    function saveData(){
-    var input = document.getElementsByClassName("description")    ;
-    localStorage.setItem("button", input.value);
-};
+        
+        localStorage.setItem("text",text);
+        localStorage.getItem("time",time);
+   })
 
-
-    // // //create an onclick function for the save button
-    // // select the description
-    // set the value and time of that task
+   $("#hour09 .description").val(localStorage.getItem("hour9"));
+   $("#hour10 .description").val(localStorage.getItem("hour10"));
+   $("#hour11 .description").val(localStorage.getItem("hour11"));
+   $("#hour12 .description").val(localStorage.getItem("hour12"));
+   $("#hour13 .description").val(localStorage.getItem("hour13"));
+   $("#hour14 .description").val(localStorage.getItem("hour14"));
+   $("#hour15 .description").val(localStorage.getItem("hour15"));
+   $("#hour16 .description").val(localStorage.getItem("hour16"));
+   $("#hour17 .description").val(localStorage.getItem("hour17"));
+        
+   }
+    saveData();
