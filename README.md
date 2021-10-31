@@ -37,7 +37,7 @@ The following third-party applications were used as a part of this project:
 ## Usage
 
 
-![visuals]()
+![visuals](https://github.com/JessVarghese/work-day-scheduler/blob/main/worday_scheduler_image.png)
 
 
 ## License
