@@ -2,17 +2,20 @@
 
 ## Description
 
-The purpose of this application is to provide the user a way to keep track of events each work day. The calendar is set to the current day and uses colors to indicate whether each time is in the past(grey), present(green), or future(green).
+The purpose of this application is to provide the user a way to keep track of events each work day. The calendar is set to the current day and uses colors to indicate whether each time is in the past(grey), present(red), or future(green).
 
 
 [Deployed application](https://jessvarghese.github.io/work-day-scheduler/).
 
 ## Table of Contents
 
-* [Installation](#Installation)
-* [Technologies](#)
-* [Usage](#usage)
-* [License](#license)
+- [Work Day Scheduler](#work-day-scheduler)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Technologies](#technologies)
+  - [Usage](#usage)
+  - [License](#license)
 
 
 
