@@ -33,19 +33,40 @@ getCurrentHour();
 
 //save text input to local storage
 function saveData() {
+  
    
     var textItem= {};
+
 
     $('.textItem').each(function(){
         textItem[this.id] = this.value;
     })
     localStorage.setItem('textString',JSON.stringify(textItem));
+    localStorage.getItem('textString');
+
 
     console.log(localStorage.getItem('textString'));               
-    console.log(JSON.parse(localStorage.getItem('textString')));   
-}
+    // console.log(JSON.parse(localStorage.getItem('textString'))); 
+    
+    document.querySelectorAll(".saveBtn").forEach(function (btn) {
+      btn.addEventListener("click", textItem); {
 
+      //take the task Item and save it to the page
 
+      
+      
+
+      
+    }
+
+  })
+
+    
+     
+      };
+   
+      
+     
   
 
 //   $("#hour09 .description").val(localStorage.getItem("hour9"));
